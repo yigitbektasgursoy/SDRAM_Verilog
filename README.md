@@ -101,7 +101,7 @@ The SDRAM model (`sdram_model.v`) simulates the behavior of an actual SDRAM chip
 
 ## Self-Checking Testbench Verification
 
-![Timing Chart](tcl.png)
+![Timing Chart](docs/tcl.png)
 
 ---
 
