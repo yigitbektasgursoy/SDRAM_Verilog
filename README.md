@@ -19,11 +19,18 @@ This project involves the integration and implementation of an SDRAM (Synchronou
 
 The SDRAM controller manages the timing and control signals required to interface with SDRAM memory. Supported commands are shown in blue. It supports the following operations:
 
+- **COMMAND INHIBIT (NOP):** Invalid command.
+- **NOP (No Operation):** Idle state for timing management.
 - **ACT (Activate):** Activates a row in the SDRAM.
 - **READ:** Reads data from the activated row.
 - **WRITE:** Writes data to the activated row.
-- **NOP (No Operation):** Idle state for timing management.
+- **BURST TERMINATE:** Ends the current burst operation. (Unsupported)
+- **PRECHARGE:** Deactivates the open row in a bank. (Unsupported)
+- **AUTO REFRESH:** Refreshes SDRAM contents to prevent data loss. (Unsupported)
+- **LOAD MODE REGISTER:** Loads settings into the SDRAM mode register. (Unsupported)
+
 ![SDRAM Commands Truth Table](docs/SDRAMCommands.png)
+
 ---
 
 ## SDRAM Controller
@@ -58,6 +65,7 @@ The SDRAM controller (`sdram_controller.v`) handles read and write operations us
 
 ![SDRAM Write Command](docs/ReadOperation.png)
 ![SDRAM Read Command](docs/WriteOperation.png)
+
 ---
 
 ## SDRAM Model
@@ -94,6 +102,7 @@ The project is organized as follows:
 /src        Source files for SDRAM controller and model
 /testbench  Testbench files for verification
 ```
+
 ---
 
 ## To Do
