@@ -2,6 +2,7 @@
 
 This project involves the integration and implementation of an SDRAM (Synchronous Dynamic Random-Access Memory) controller in Verilog. The SDRAM controller is designed to manage read and write operations to SDRAM memory using a finite state machine (FSM) to handle timing and command sequences. This README file provides an overview of the SDRAM controller, SDRAM model, and testbench for verification.
 ![SDRAM Block Diagram](docs/1GbSDRAM.png)
+![SDRAM RTL Block Diagram](docs/SDRAMRTLBlockDiagram.png)
 
 ## Table of Contents
 
