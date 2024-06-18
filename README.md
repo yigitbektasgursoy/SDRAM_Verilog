@@ -93,6 +93,18 @@ The SDRAM model (`sdram_model.v`) simulates the behavior of an actual SDRAM chip
 
 ---
 
+## Behavioral Simulation Result
+
+![Timing Chart](docs/behavsim.png)
+
+---
+
+## Self-Checking Testbench Verification
+
+![Timing Chart](tcl.png)
+
+---
+
 ## Directory Structure
 
 The project is organized as follows:
